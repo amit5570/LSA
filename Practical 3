@@ -1,0 +1,32 @@
+Aim: install ssh server
+
+Step 1: Install OpenSSH Server Software Package
+ command: sudo apt-get install openssh-server
+
+Step 2: Enable ssh service
+Command :- sudo sysytemctl start ssh
+
+Step 3:-Step 3: Check sshd status
+Check the status of the SSH daemon:
+Command:- sudo systemctl status sshd
+
+
+Step 4:-
+First Update And Then Install OpenSSH server.
+Command :- sudo apt update
+Command :- sudo apt upgrade
+
+Step 5:- Allow ssh through firewall and enable the firewall and check the status of firewall
+command-sudo ufw allow ssh
+command-sudo ufw enable
+command-sudo ufw status
+
+Step 6:- Testing
+command-ssh kali@server-ip
+or
+command-ssh localhost
+To configure the ssh, the file is located at /etc/ssh/sshd_config It contains options to configure the ssh.After configuring,
+restart the service, and your changes will be applied.
+
+Step6-to exit ssh 
+command-exit 
